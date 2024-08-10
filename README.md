@@ -1,1 +1,1 @@
-First stpes in JS, functions and basic  stuff.
+First stpes in JS, functions and basic stuff.
