@@ -217,3 +217,104 @@ console.log(whatRelation(100))
 console.log(whatRelation(14))
 console.log(whatRelation(54))
 console.log(whatRelation(0))
+
+
+
+
+
+const tipCalculator = (quality, total ) => {
+
+  if (quality === 'bad') {
+    return total * 0.05;
+  } else if (quality === 'ok') {
+    return total * 0.15;
+  } else if (quality === 'good') {
+    return total * 0.2;
+  } else if (quality === 'excellent') {
+    return total * 0.3;
+  } else {
+    return total * 0.18;
+  }
+};
+
+console.log(tipCalculator('ok', 100))
+console.log(tipCalculator('bad', 100))
+console.log(tipCalculator('excellent', 100))
+console.log(tipCalculator('good', 100))
+
+
+
+
+
+// There is no need to use break because return automatically stops the function.
+const toEmoticon = (emoticon) => {
+  switch(emoticon) {
+    case 'shrug':
+      return '|_{"}_|';
+    case 'smiley face':
+      return ':)';
+    case 'frowny face':
+      return ':(';
+    case 'winky face':
+      return ';)';
+    case 'heart':
+      return '<3';
+    default:
+      return '|_(* ~ *)_|';
+  }
+};
+
+
+console.log(toEmoticon("whatever")) 
+console.log(toEmoticon("shrug")) 
+console.log(toEmoticon("heart")) 
+
+
+
+
+
+const colorMessage =(favoriteColor, shirtColor) => {
+  if (favoriteColor === shirtColor ) {
+    return 'The shirt is your favorite color!';
+  } else {
+    return 'That is a nice color.';
+  }
+};
+
+console.log(colorMessage(1,1))
+
+
+
+
+
+const isEven = number => {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+console.log(isEven(23))
+console.log(isEven(4))
+console.log(isEven(101))
+console.log(isEven(22))
+
+
+
+
+const numberDigits = x => {
+  if (x >= 0 && x <= 9) {
+    return `One digit: ${x}`;
+  } else if (x >= 10 && x <= 99) {
+    return `Two digits: ${x}`;
+  } else {
+    return `The number is: ${x}`;
+  }
+}
+
+
+console.log(numberDigits(-202))
+console.log(numberDigits(66))
+console.log(numberDigits(2))
