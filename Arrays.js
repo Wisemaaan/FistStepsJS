@@ -115,11 +115,6 @@ console.log('Removed item:', removed);
 console.log('Rest of the list:', groceryList_2);
 
 
-
-
-
-
-
 const concept = ['arrays', 'can', 'be', 'mutated'];
 
 function changeArr(arr){
