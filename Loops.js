@@ -108,3 +108,18 @@ for (let i = 0; i < rapperArray.length; i++) {
     }
 }
 console.log("And if you don't know, now you know.");
+
+
+
+// For... of loop, you can use this if you want to reverse iteration
+
+
+const pokemonList = ['Pikachu', 'Charizard', 'Squirtle', 'Yoshi', 'Snorlax'];
+
+// Write your code below
+for (const pokemon of pokemonList) {
+  if (pokemon === 'Yoshi') {
+    continue; // Skips the iteration when pokemon is 'Yoshi'
+  }
+  console.log(`You caught a ${pokemon}!`);
+}
